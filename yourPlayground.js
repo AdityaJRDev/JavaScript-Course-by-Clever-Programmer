@@ -276,11 +276,11 @@ const filter = (numbers, greaterThan) => {
 // console.log(filteredNumbers);
 
 const actors = [
-  {name: 'johny', netWorth: 2000000},
-  {name: 'amber', netWorth: 10},
-  {name: 'matt', netWorth: 170000000},
-  {name: 'brad', netWorth: 300000000},
-  {name: 'leonardo', netWorth: 10000000},
+  {name: 'johny', netWorth: 2000000, age: 26},
+  {name: 'amber', netWorth: 10, age: 50},
+  {name: 'matt', netWorth: 170000000, age: 26},
+  {name: 'brad', netWorth: 300000000, age: 75},
+  {name: 'leonardo', netWorth: 10000000, age: 26},
 ]
 
 // let result = actors.filter(actor => actor.netWorth > 10)
@@ -299,3 +299,6 @@ console.log(actors.reduce((prev, curr) => prev + curr.netWorth, 0))
 // const result = nums.reduce((prev, curr) => prev + curr)
 
 // console.log(result);
+
+// const lessThanThirty = actors.filter((x) => x.age < 30).map((x) => x.name);
+// console.log(lessThanThirty);
