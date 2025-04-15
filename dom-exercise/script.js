@@ -1,16 +1,7 @@
-console.log('hello')
+let redDiv = document.getElementById('red');
+let yellowDiv = document.getElementById('yellow');
+let greenDiv = document.getElementById('green');
 
-let titleDiv = document.getElementById('title')
-
-console.log('before: ', titleDiv.innerText)
-
-let message = 'Goodbye my friend!'
-
-titleDiv.innerText = message;
-
-console.log('after: ', titleDiv.innerText)
-
-titleDiv.innerHTML= `<p>${message}</p>`
-
-titleDiv.style.backgroundColor = 'red'
-
+redDiv.onclick = () => console.log('User choice: Rock')
+yellowDiv.onclick = () => console.log('User choice: Paper')
+greenDiv.onclick = () => console.log('User choice: Scissor')
