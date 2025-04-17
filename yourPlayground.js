@@ -285,7 +285,7 @@ const actors = [
 
 // let result = actors.filter(actor => actor.netWorth > 10)
 // let names = result.map(actor => actor.name).join(', ');
-console.log(actors.reduce((prev, curr) => prev + curr.netWorth, 0))
+// console.log(actors.reduce((prev, curr) => prev + curr.netWorth, 0))
 
 // playground.innerHTML = `<h1>${names}</h1>`;
 
@@ -302,3 +302,19 @@ console.log(actors.reduce((prev, curr) => prev + curr.netWorth, 0))
 
 // const lessThanThirty = actors.filter((x) => x.age < 30).map((x) => x.name);
 // console.log(lessThanThirty);
+
+// if else if else
+// rainy (1), sunny (-1), overcast (0)
+const weatherScorer = (weather) => {
+  let score
+  if(weather == 'rainy') {
+    score = 1
+  } else if (weather == 'sunny') {
+    score = -1
+  } else {
+    score = 0
+  }
+
+  return score
+}
+console.log(weatherScorer('overcast'))
