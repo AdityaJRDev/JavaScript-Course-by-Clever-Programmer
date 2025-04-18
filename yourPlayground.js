@@ -317,4 +317,7 @@ const weatherScorer = (weather) => {
 
   return score
 }
-console.log(weatherScorer('overcast'))
+// console.log(weatherScorer('overcast'))
+
+// API
+// https://dog.ceo/api/breeds/image/random
